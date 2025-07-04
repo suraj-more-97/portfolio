@@ -1,0 +1,70 @@
+.hero {
+    height: 90vh;
+    background: linear-gradient(135deg, #61dafb, #282c34);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  
+  .hero-photo-wrapper {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 1.5rem;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #21a1f1, #61dafb);
+    padding: 6px; /* border thickness */
+    box-shadow:
+      0 4px 15px rgba(33, 161, 241, 0.5),
+      0 0 30px rgba(97, 218, 251, 0.4);
+    transition: transform 0.3s ease;
+  }
+  
+  .hero-photo-wrapper:hover {
+    transform: scale(1.1) rotate(5deg);
+  }
+  
+  .hero-profile-photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    border: 4px solid white;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero .highlight {
+    color: #21a1f1;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+  }
+  
+  .hero .btn {
+    background-color: #21a1f1;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero .btn:hover {
+    background-color: #1a82c9;
+  }
+  
