@@ -1,5 +1,6 @@
 
 import React from 'react';
+
 import { useState } from 'react';
 import './Hero.css';
 import profilePhoto from '../assets/suraj.jpeg';  // adjust path if needed
@@ -32,6 +33,7 @@ function Hero() {
       </div>
     )}
     </>
+
   );
 }
 
