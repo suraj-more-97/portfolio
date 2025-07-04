@@ -5,6 +5,7 @@ function About() {
   return (
     <section id="about" className="section">
       <h2>About Me</h2>
+
       <p>
         I'm a passionate Frontend Developer with over 3 years of experience turning complex ideas into clean, responsive, and user-friendly web applications. My journey began with a strong foundation in Computer Science, and ever since, I've been fascinated by the power of code to build seamless digital experiences.
       </p>
@@ -14,6 +15,7 @@ function About() {
       <p>
         My passion lies in building intuitive interfaces that make users’ lives easier. Whether it’s optimizing performance, implementing state management, or improving accessibility, I strive to deliver high-quality frontends that leave an impact. I’m always exploring new tools and technologies to grow as a developer.
       </p>
+
     </section>
   );
 }

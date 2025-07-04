@@ -1,11 +1,14 @@
 import React from 'react';
 import './Contact.css';
+
 import { FaPhone, FaEnvelope, FaLinkedin, FaInstagram } from 'react-icons/fa';
+
 
 function Contact() {
   return (
     <section id="contact" className="section">
       <h2>Contact</h2>
+
       <p className="contact-message">Feel free to reach out — I'm always open to new opportunities!</p>
       <br></br>
       <div className="contact-grid">
@@ -34,6 +37,7 @@ function Contact() {
           </a>
         </div>
       </div>
+
     </section>
   );
 }

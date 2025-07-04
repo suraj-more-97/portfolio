@@ -37,6 +37,7 @@
     border: 4px solid white;
   }
   
+
   /* Modal styles */
 
 .modal-overlay {
@@ -86,6 +87,7 @@
   from { transform: scale(0.8); }
   to { transform: scale(1); }
 }
+
 
   .hero h1 {
     font-size: 3rem;

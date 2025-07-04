@@ -6,6 +6,7 @@ function Skills() {
     <section id="skills" className="section">
       <h2>Skills</h2>
 
+
       <div className="skills-group">
         <h3>Frontend Technologies</h3>
         <ul className="skills-list">
@@ -48,6 +49,7 @@ function Skills() {
           <li>Microsoft Azure 900</li>
         </ul>
       </div>
+
     </section>
   );
 }
