@@ -1,7 +1,14 @@
+.about-section, #about {
+  max-width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
 .section {
     padding: 4rem 2rem;
-    max-width: 900px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: none;
+    margin: 0;
   }
   
   .section h2 {
@@ -18,4 +25,3 @@
     margin: 0 auto;
     text-align: center;
   }
-  
