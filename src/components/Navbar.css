@@ -1,8 +1,9 @@
 .navbar {
+    height: 56px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 3rem;
+    padding: 0rem 2rem;
     background-color: #282c34;
     color: white;
     position: sticky;
