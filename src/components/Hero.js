@@ -20,7 +20,7 @@ function Hero() {
       </div>
       <h1>Hello, I'm <span className="highlight">SURAJ MORE</span></h1>
       <p>Skilled React developer specializing in dynamic, user-centric web interfaces with strong API integration skills.</p>
-      <a href="#projects" className="btn">View Projects</a>
+    
     </section>
 
     {/* Modal Popup */}

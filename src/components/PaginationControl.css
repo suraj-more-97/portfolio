@@ -1,0 +1,237 @@
+
+.pagination-control-wrapper {
+  position: static;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.95) 20%, #ffffff 100%);
+  backdrop-filter: blur(10px);
+  padding: 0.3rem 1rem 0.50rem 1rem;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgba(79, 70, 229, 0.1);
+}
+
+.pagination-control {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Floating Arrow Buttons */
+.floating-arrows {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  pointer-events: none;
+  z-index: 99;
+}
+
+.floating-arrow-btn {
+  background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
+  pointer-events: auto;
+  opacity: 0;
+  transform: scale(0.8) translateX(0);
+}
+
+.prev-arrow {
+  transform: scale(0.8) translateX(-30px);
+}
+
+.next-arrow {
+  transform: scale(0.8) translateX(30px);
+}
+
+.floating-arrows.visible .prev-arrow {
+  opacity: 1;
+  transform: scale(1) translateX(0);
+}
+
+.floating-arrows.visible .next-arrow {
+  opacity: 1;
+  transform: scale(1) translateX(0);
+}
+
+.floating-arrow-btn:hover {
+  transform: scale(1.1) translateY(-2px);
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.4);
+}
+
+.floating-arrow-btn:active {
+  transform: scale(0.95);
+}
+
+.pagination-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+  min-width: 200px;
+}
+
+.page-dots {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.page-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(79, 70, 229, 0.2);
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.page-dot:hover {
+  background: rgba(79, 70, 229, 0.4);
+  transform: scale(1.3);
+}
+
+.page-dot.active {
+  width: 14px;
+  height: 14px;
+  background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
+  box-shadow: 0 2px 10px rgba(79, 70, 229, 0.4);
+  transform: scale(1.2);
+}
+
+.page-info {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #4b5563;
+  margin: 0;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pagination-control-wrapper {
+    padding: 0.75rem 1rem 1.5rem 1rem;
+  }
+
+  .pagination-control {
+    gap: 1rem;
+  }
+
+  .floating-arrow-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+
+  .prev-arrow {
+    transform: scale(0.8) translateX(-20px);
+  }
+
+  .next-arrow {
+    transform: scale(0.8) translateX(20px);
+  }
+
+  .floating-arrows.visible .prev-arrow,
+  .floating-arrows.visible .next-arrow {
+    transform: scale(1) translateX(0);
+  }
+
+  .pagination-info {
+    min-width: 150px;
+    gap: 0.5rem;
+  }
+
+  .page-dots {
+    gap: 0.4rem;
+  }
+
+  .page-dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .page-dot.active {
+    width: 12px;
+    height: 12px;
+  }
+
+  .page-info {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pagination-control-wrapper {
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+  }
+
+  .pagination-control {
+    gap: 0.75rem;
+  }
+
+  .floating-arrow-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .prev-arrow {
+    transform: scale(0.8) translateX(-15px);
+  }
+
+  .next-arrow {
+    transform: scale(0.8) translateX(15px);
+  }
+
+  .floating-arrows.visible .prev-arrow,
+  .floating-arrows.visible .next-arrow {
+    transform: scale(1) translateX(0);
+  }
+
+  .floating-arrows {
+    padding: 0 1rem;
+  }
+
+  .pagination-info {
+    min-width: 120px;
+    gap: 0.4rem;
+  }
+
+  .page-dots {
+    gap: 0.3rem;
+  }
+
+  .page-dot {
+    width: 7px;
+    height: 7px;
+  }
+
+  .page-dot.active {
+    width: 10px;
+    height: 10px;
+  }
+
+  .page-info {
+    font-size: 0.75rem;
+  }
+}

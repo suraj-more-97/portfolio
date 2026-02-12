@@ -7,8 +7,6 @@ import { FaPhone, FaEnvelope, FaLinkedin, FaInstagram } from 'react-icons/fa';
 function Contact() {
   return (
     <section id="contact" className="section">
-      <h2>Contact</h2>
-
       <p className="contact-message">Feel free to reach out — I am open to new opportunities!</p>
       <br></br>
       <div className="contact-grid">

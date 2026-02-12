@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './Project.css';
 
 const projects = [
@@ -27,64 +27,23 @@ const projects = [
 ];
 
 function Projects() {
-  const [active, setActive] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
-
-  useEffect(() => {
-    if (isPaused) {
-      const pauseTimer = setTimeout(() => setIsPaused(false), 5000); // 5 seconds pause
-      return () => clearTimeout(pauseTimer);
-    }
-    const timer = setInterval(() => {
-      setActive((prev) => {
-        setIsPaused(true);
-        return (prev + 1) % projects.length;
-      });
-    }, 3500);
-    return () => clearInterval(timer);
-  }, [isPaused]);
-
-  const project = projects[active];
-
-  // Calculate indices for the cards
-  const first = active;
-  const second = (active + 1) % projects.length;
-  const third = (active + 2) % projects.length;
-
   return (
     <section id="projects" className="section">
-      <h2 className="projects-title">Projects</h2>
-      <div className="projects-grid">
-        <div className="projects-row">
-          {[first, second].map(idx => (
-            <div key={idx} className="project-card project-card-animate">
-              <h3 className="project-title">{projects[idx].title}</h3>
-              <p className="project-desc">{projects[idx].desc}</p>
-              {projects[idx].list.length > 0 && (
-                <ul className="project-list">
-                  {projects[idx].list.map((item, i) => (
-                    <li key={i}><strong>{item}</strong></li>
-                  ))}
-                </ul>
-              )}
-              <p className="project-tech"><strong>Tech Stack:</strong> {projects[idx].tech}</p>
-            </div>
-          ))}
-        </div>
-        <div className="projects-row">
-          <div className="project-card project-card-animate">
-            <h3 className="project-title">{projects[third].title}</h3>
-            <p className="project-desc">{projects[third].desc}</p>
-            {projects[third].list.length > 0 && (
-              <ul className="project-list">
-                {projects[third].list.map((item, i) => (
-                  <li key={i}><strong>{item}</strong></li>
+      <div className="projects-list-container">
+        {projects.map((project, idx) => (
+          <div key={idx} className="project-item">
+            <h3 className="project-item-title">{project.title}</h3>
+            <p className="project-item-desc">{project.desc}</p>
+            {project.list.length > 0 && (
+              <ul className="project-item-list">
+                {project.list.map((item, i) => (
+                  <li key={i}>{item}</li>
                 ))}
               </ul>
             )}
-            <p className="project-tech"><strong>Tech Stack:</strong> {projects[third].tech}</p>
+            <p className="project-item-tech"><strong>Tech Stack:</strong> {project.tech}</p>
           </div>
-        </div>
+        ))}
       </div>
     </section>
   );
