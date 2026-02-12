@@ -4,8 +4,6 @@ import './About.css';
 function About() {
   return (
     <section id="about" className="section">
-      <h2>About Me</h2>
-
       <p>
         I'm a passionate Frontend Developer with over 3 years of experience turning complex ideas into clean, responsive, and user-friendly web applications. My journey began with a strong foundation in Computer Science, and ever since, I've been fascinated by the power of code to build seamless digital experiences.
       </p>

@@ -1,5 +1,5 @@
 .hero {
-    height: 90vh;
+    height: 100%;
     background: linear-gradient(135deg, #61dafb, #282c34);
     color: white;
     display: flex;
@@ -7,7 +7,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 1rem;
+    padding: 2rem 1rem;
+    overflow: hidden;
   }
   
   .hero-photo-wrapper {

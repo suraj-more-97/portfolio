@@ -1,11 +1,12 @@
 footer {
-    height: 48px;
-    background-color: #282c34;
-    color: white;
-    align-items: center;
-    padding: 0rem 1.5rem;
-    font-size: 0.9rem;
-    margin-top: 3rem;
-    user-select: none;
-  }
+  height: 48px;
+  background-color: #282c34;
+  color: white;
+  align-items: center;
+  padding: 0rem 1.5rem;
+  font-size: 0.9rem;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+}
   
