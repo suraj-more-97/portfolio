@@ -16,6 +16,7 @@ function Skills() {
           <li>Redux / Context API</li>
           <li>NextJs</li>
           <li>Animating React Apps</li>
+          <li>Debugging</li>
           <li>Deploying React Apps</li>
         </ul>
       </div>
