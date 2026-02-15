@@ -11,10 +11,12 @@ function Skills() {
           <li>JavaScript</li>
           <li>HTML5</li>
           <li>CSS3</li>
-          <li>Bootstrap</li>
           <li>Tailwind CSS</li>
           <li>Material UI</li>
           <li>Redux / Context API</li>
+          <li>NextJs</li>
+          <li>Animating React Apps</li>
+          <li>Deploying React Apps</li>
         </ul>
       </div>
 
