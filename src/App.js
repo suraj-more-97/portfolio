@@ -29,7 +29,7 @@ function App() {
   const [lastUsedAnimations, setLastUsedAnimations] = useState([]);
 
   const pages = [
-    { name: 'HERO', component: Hero },
+    { name: 'HOME', component: Hero },
     { name: 'ABOUT', component: About },
     { name: 'PROJECTS', component: Project },
     { name: 'SKILLS', component: Skills },
