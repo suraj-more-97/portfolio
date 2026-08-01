@@ -11,6 +11,7 @@ function Skills() {
           <li>JavaScript</li>
           <li>HTML5</li>
           <li>CSS3</li>
+          <li>SCSS</li>
           <li>Tailwind CSS</li>
           <li>Material UI</li>
           <li>Redux / Context API</li>
@@ -28,6 +29,9 @@ function Skills() {
           <li>Postman</li>
           <li>Git & GitHub</li>
           <li>Nginx</li>
+          <li>Confluence</li>
+          <li>Jira</li>
+          <li>SonarQube</li>
         </ul>
       </div>
 

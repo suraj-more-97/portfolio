@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suraj More | Resume</title>
+    <style>
+      :root {
+        --navy: #0f172a;
+        --blue: #2563eb;
+        --text: #1f2937;
+        --muted: #6b7280;
+        --light: #f8fafc;
+        --border: #e5e7eb;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: #f3f4f6;
+        color: var(--text);
+        padding: 24px;
+      }
+      .resume {
+        max-width: 900px;
+        margin: 0 auto;
+        background: #ffffff;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        padding: 34px 38px;
+      }
+      .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 16px;
+        padding-bottom: 16px;
+        border-bottom: 2px solid var(--blue);
+      }
+      h1 { margin: 0; font-size: 28px; color: var(--navy); }
+      .title { color: var(--blue); font-weight: 600; margin-top: 4px; }
+      .download-btn {
+        background: var(--blue);
+        color: white;
+        padding: 10px 14px;
+        text-decoration: none;
+        border-radius: 999px;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+      .section { margin-top: 18px; }
+      .section h2 {
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--blue);
+        margin: 0 0 8px 0;
+      }
+      p, li { line-height: 1.65; color: var(--text); }
+      .skills { display: flex; flex-wrap: wrap; gap: 8px; }
+      .skill {
+        background: #eff6ff;
+        color: var(--blue);
+        padding: 6px 10px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 600;
+      }
+      ul { margin: 0; padding-left: 18px; }
+      .main-grid {
+        display: grid;
+        grid-template-columns: 320px minmax(0, 1fr);
+        gap: 24px;
+        margin-top: 18px;
+      }
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+      .sidebar .section {
+        background: #f8fafc;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 20px;
+      }
+      .content .section {
+        background: #ffffff;
+      }
+      .project-list li {
+        margin-bottom: 12px;
+      }
+      @media (max-width: 960px) {
+        .main-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media (max-width: 760px) {
+        body { padding: 12px; }
+        .resume { padding: 20px; }
+        .top { flex-direction: column; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="resume">
+      <div class="top">
+        <div>
+          <h1>Suraj More</h1>
+          <div class="title">Frontend Developer</div>
+          <p style="margin: 8px 0 0; color: var(--muted);">React.js · JavaScript · UI Engineering · Frontend Development</p>
+        </div>
+        <a class="download-btn" href="/SurajResume.pdf" download>Download PDF</a>
+      </div>
+
+      <div class="section">
+        <h2>Professional Summary</h2>
+        <p>Frontend Developer with 4+ years of experience building responsive, high-performance web applications using React.js, JavaScript, HTML5, CSS3, and SCSS. I focus on building modern user interfaces, integrating REST APIs, and delivering polished, accessible, and high-quality frontend experiences.</p>
+      </div>
+
+      <div class="main-grid">
+        <div class="sidebar">
+          <div class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+              <span class="skill">React.js</span>
+              <span class="skill">JavaScript</span>
+              <span class="skill">HTML5</span>
+              <span class="skill">CSS3</span>
+              <span class="skill">SCSS</span>
+              <span class="skill">Tailwind CSS</span>
+              <span class="skill">Material UI</span>
+              <span class="skill">Redux / Context API</span>
+              <span class="skill">REST APIs</span>
+              <span class="skill">Git & GitHub</span>
+              <span class="skill">Postman</span>
+              <span class="skill">Nginx</span>
+              <span class="skill">Confluence</span>
+              <span class="skill">Jira</span>
+              <span class="skill">SonarQube</span>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2>Certifications</h2>
+            <ul>
+              <li>Infosys Certified React Developer</li>
+              <li>Infosys Certified Frontend Developer</li>
+              <li>AWS Cloud Practitioner</li>
+              <li>Microsoft Azure 900</li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <h2>Education</h2>
+            <p>B.E. / B.Tech in Computer Science</p>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="section">
+            <h2>Projects</h2>
+            <ul class="project-list">
+              <li><strong>Annual Landfill Review (ALFR) — Current Project:</strong> Designed wireframes and UI flows for a responsive React.js application, developed unit tests with Jest, and enforced code quality with SonarQube while tracking work in Jira and documenting in Confluence.</li>
+              <li><strong>WebApp Migration — Citrix Tools to Web Applications:</strong> Modernized legacy Citrix-based internal tools into responsive React.js applications using Material UI, including Analytical Source Tool, Tabling Tool, Data Validation Tool, PDT, FIFO, and Migration Viewer.</li>
+              <li><strong>Bench Tracking Tool System (BTTS):</strong> Delivered a modular React UI with REST API integration and Redux state management; recognized with the Infosys Insta Award.</li>
+              <li><strong>File Comparison Tool (CSV Comparator):</strong> Developed a high-performance CSV comparator using Web Workers to handle millions of rows, complete with diff views, sorting, filtering, and downloadable reports.</li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <h2>Experience</h2>
+            <ul>
+              <li>Delivered responsive, production-ready React interfaces with clean component architecture and state management.</li>
+              <li>Implemented API integrations, debugging workflows, and frontend performance improvements for enterprise applications.</li>
+              <li>Collaborated in Agile teams using Jira, Confluence, Git, and SonarQube to maintain quality and delivery cadence.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

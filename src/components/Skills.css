@@ -32,11 +32,17 @@
   }
   
   .skills-list li {
-    background-color: #61dafb;
-    padding: 0.5rem 1.5rem;
-    border-radius: 20px;
+    background: linear-gradient(135deg, #61dafb, #4f9cf9);
+    padding: 0.6rem 1.4rem;
+    border-radius: 999px;
     color: #fff;
     font-weight: 600;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
     user-select: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .skills-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.16);
   }

@@ -66,7 +66,7 @@ function Navbar({ onNavigate, currentPage, pageNames }) {
             Contact
           </a>
         </li>
-        <li><a href="/SurajResume.pdf" download target="_blank" rel="noopener noreferrer">Resume</a></li>
+        <li><a href="/Suraj_More Resume (1).pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
       </ul>
     </nav>
   );
