@@ -16,7 +16,7 @@ function Contact() {
         </div>
         <div className="contact-item">
           <FaEnvelope className="icon" />
-          <a href="mailto:surekant13997@gmail.com">surekant13997@gmail.com</a>
+          <a href="mailto:surajmore.tect@gmail.com">surajmore.tect@gmail.com</a>
         </div>
         <div className="contact-item">
           <FaLinkedin className="icon" />
