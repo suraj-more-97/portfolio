@@ -28,7 +28,7 @@ const projects = [
       'Migration Viewer',
     ],
     tech: ['React.js', 'JavaScript', 'Material UI', 'HTML5', 'CSS3', 'REST APIs'],
-    status: 'ongoing',
+    status: 'completed',
     icon: '🚀',
   },
   {
@@ -63,8 +63,16 @@ function Projects() {
   const [expandedIndex, setExpandedIndex] = useState(null);
 
   return (
-    <section id="projects" className="section">
-      <h2 className="projects-title">Projects</h2>
+    <section id="projects" className="projects-section">
+      <div className="section-head">
+        <p className="section-label">Projects</p>
+        <h2>Selected work that blends design, performance and business value.</h2>
+        <p className="section-description">
+          These projects showcase my work with React-driven interfaces, workflow automation, and real-world enterprise tooling.
+          Each card highlights the approach, technology, and outcome.
+        </p>
+      </div>
+
       <div className="projects-list-container">
         {projects.map((project, idx) => (
           <div
@@ -74,7 +82,7 @@ function Projects() {
             onMouseLeave={() => setExpandedIndex(null)}
             onClick={() => setExpandedIndex(expandedIndex === idx ? null : idx)}
           >
-            <div className="project-item-header">
+            <div className="project-card-header">
               <div className="project-item-icon">{project.icon}</div>
               <div className="project-item-title-wrapper">
                 <h3 className="project-item-title">{project.title}</h3>
@@ -84,9 +92,7 @@ function Projects() {
               </div>
             </div>
 
-            <p className="project-item-desc" style={{ color: project.descColor || 'rgba(255, 255, 255, 0.85)' }}>
-              {project.desc}
-            </p>
+            <p className="project-item-desc">{project.desc}</p>
 
             {project.list.length > 0 && (
               <ul className="project-item-list">
@@ -97,7 +103,7 @@ function Projects() {
             )}
 
             <div className="project-item-tech-container">
-              <span className="tech-label">Tech Stack:</span>
+              <span className="tech-label">Tech stack</span>
               <div className="tech-badges">
                 {project.tech.map((tech, i) => (
                   <span key={i} className="tech-badge">{tech}</span>

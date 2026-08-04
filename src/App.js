@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Project from './components/Project';
+import Demo from './components/Demo';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -32,6 +33,7 @@ function App() {
     { name: 'HOME', component: Hero },
     { name: 'ABOUT', component: About },
     { name: 'PROJECTS', component: Project },
+    { name: 'DEMO', component: Demo },
     { name: 'SKILLS', component: Skills },
     { name: 'CONTACT', component: Contact },
   ];
@@ -73,8 +75,10 @@ function App() {
   return (
     <div className="App">
       <Navbar onNavigate={goToPage} currentPage={currentPage} pageNames={pages.map(p => p.name)} />
-      <div className={`pages-container ${transitionAnimation}`}>
-        <CurrentComponent />
+      <div className="AppInner">
+        <div className={`pages-container ${transitionAnimation}`}>
+          <CurrentComponent onNavigate={goToPage} />
+        </div>
       </div>
       <PaginationControl 
         currentPage={currentPage}

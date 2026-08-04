@@ -1,44 +1,93 @@
 .navbar {
-    height: 56px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0rem 2rem;
-    background-color: #282c34;
-    color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  
-  .logo {
-    font-weight: 700;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-  }
-  
-  .nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-  }
-  
-  .nav-links li a:hover {
-    color: #61dafb;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background: rgba(15, 23, 42, 0.92);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 1.5rem;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.4rem;
+  letter-spacing: 0.08em;
+  color: #f8fafc;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  background: transparent;
+  color: #dbeafe;
+  border: none;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.nav-link.active {
+  background: linear-gradient(135deg, #38bdf8 0%, #6366f1 100%);
+  color: #0f172a;
+  box-shadow: 0 12px 30px rgba(56, 189, 248, 0.2);
+}
+
+.resume-link {
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.16), rgba(99, 102, 241, 0.16));
+  border: 1px solid rgba(56, 189, 248, 0.24);
+}
+
+@media (max-width: 850px) {
+  .navbar-inner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
   }
 
-  .nav-links li a.active {
-    background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
-    color: white;
-    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+  .nav-links {
+    justify-content: center;
   }
+}
+
+@media (max-width: 560px) {
+  .navbar-inner {
+    padding: 0.75rem 1rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .nav-link {
+    padding: 0.55rem 0.9rem;
+    font-size: 0.95rem;
+  }
+}
   
